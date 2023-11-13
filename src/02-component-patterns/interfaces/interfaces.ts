@@ -1,11 +1,6 @@
-import { ReactElement } from "react";
 
-export interface ProductCardProps {
-    product: Product;
-    children?: ReactElement | ReactElement[]  //JSX.Element | JSX.Element[]
-}
 
-interface Product {
+export interface Product {
     id: string;
     title: string;
     img?: string;
@@ -14,5 +9,5 @@ interface Product {
 export interface ProductContextProps {
     counter: number;
     increaseBy: (value: number) => void;
-    product: Product
+    product: Product;
 }
